@@ -1,7 +1,7 @@
-# Automatic Link Opener
+# Automatic Link Opener For Online Classes
 
 This is a small simple program created by **SKGEzhil**.<br/>
-It automatically opens specific links at specific day of a week at specific time.
+It automatically opens the links at specific time based on weekly schedule.
 
 # Tutorial
 
