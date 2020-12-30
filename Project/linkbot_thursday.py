@@ -47,9 +47,6 @@ def open_link_1():
         open_link_4()
     if timer_4 < Current_time < timer_5:
         open_link_5()
-    if Current_time != timer_5 and Current_time > timer_5:
-        from linkbot_friday import open_link_1
-        open_link_1()
 
     # Opening the link
     if (Current_time == timer_1):

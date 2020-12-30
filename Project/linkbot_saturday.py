@@ -44,9 +44,6 @@ def open_link_1():
     open_link_4()
   if timer_4 < Current_time < timer_5:
     open_link_5()
-  if Current_time != timer_5 and Current_time > timer_5:
-    from linkbot_thursday import open_link_1
-    open_link_1()
 
   # Opening the link
   if (Current_time == timer_1):
@@ -103,7 +100,7 @@ def open_link_5():
     open_link_1()
   if (Current_time == timer_5):
     webbrowser.open(link_5)
-    from linkbot_thursday import open_link_1
+    from linkbot_monday import open_link_1
     open_link_1()
 
 def opener_5():
