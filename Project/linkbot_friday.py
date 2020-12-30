@@ -32,7 +32,7 @@ def open_link_1():
   Current_time = time.strftime("%H:%M:%S")
   if (Current_time < timer_1):
     while (Current_time != timer_1):
-      print("wed Waiting for timer_1")
+      print("Fri Waiting for timer_1")
       print("Waiting, the current time is " + Current_time + " :-( ")
       Current_time = time.strftime("%H:%M:%S")
       time.sleep(1)
@@ -60,7 +60,7 @@ def open_link_2():
     Current_time = time.strftime("%H:%M:%S")
     if (Current_time != timer_2):
         while (Current_time != timer_2):
-            print("Thu Waiting for timer_2")
+            print("Fri Waiting for timer_2")
             print("Waiting, the current time is " + Current_time + " :-( ")
             Current_time = time.strftime("%H:%M:%S")
             time.sleep(1)
@@ -73,7 +73,7 @@ def open_link_3():
     Current_time = time.strftime("%H:%M:%S")
     if (Current_time != timer_3):
         while (Current_time != timer_3):
-            print("Waiting for timer_3")
+            print("Fri Waiting for timer_3")
             print("Waiting, the current time is " + Current_time + " :-( ")
             Current_time = time.strftime("%H:%M:%S")
             time.sleep(1)
@@ -86,7 +86,7 @@ def open_link_4():
     Current_time = time.strftime("%H:%M:%S")
     if (Current_time != timer_4):
         while (Current_time != timer_4):
-            print("Waiting for timer_4")
+            print("Fri Waiting for timer_4")
             print("Waiting, the current time is " + Current_time + " :-( ")
             Current_time = time.strftime("%H:%M:%S")
             time.sleep(1)
@@ -99,7 +99,7 @@ def open_link_5():
     Current_time = time.strftime("%H:%M:%S")
     if (Current_time != timer_5):
         while (Current_time != timer_5):
-            print("Waiting for timer_5")
+            print("Fri Waiting for timer_5")
             print("Waiting, the current time is " + Current_time + " :-( ")
             Current_time = time.strftime("%H:%M:%S")
             time.sleep(1)
