@@ -1,0 +1,39 @@
+
+
+# Import webbrowser and time module 
+import webbrowser
+import time 
+  
+# Input Site
+link = "https://skgezhil.blogspot.com"
+link2 = "https://skgezhil.blogspot.com"
+
+# Taking alarm time from the user
+alarm = "10:57:50"
+alarm2 = "10:57:55"
+  
+# This is the actual time that we will use to print. 
+Current_time = time.strftime("%H:%M:%S") 
+
+#Functions
+def open_link():
+  webbrowser.open(link)
+  print("Hello from a function")
+  
+def open_link_2():
+  while (Current_time != alarm):
+    print ("Waiting, the current time is " + Current_time +" :-( " ) 
+    time.sleep(1)
+
+# Opening the webpage at alarm time
+while (Current_time != alarm):
+    print ("Waiting, the current time is " + Current_time +" :-( " )
+    Current_time = time.strftime("%H:%M:%S") 
+    time.sleep(1)
+else:
+    open_link()
+    open_link_2()
+    
+if (Current_time == alarm2): 
+    print ("WEBSITE IS OPENING :D") 
+    webbrowser.open(link)

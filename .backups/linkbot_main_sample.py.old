@@ -1,0 +1,52 @@
+
+
+# Import webbrowser and time module 
+import webbrowser
+import time 
+  
+# Input Site
+link_1 = "https://skgezhil.blogspot.com"
+link_2 = "https://facebook.com/skgezhil2005"
+
+#Variables
+link_count = 0
+
+# Taking alarm time from the user
+timer_1 = "14:10:10"
+timer_2 = "14:10:15"
+
+# This is the actual time that we will use to print. 
+Current_time = time.strftime("%H:%M:%S") 
+
+#Functions
+def open_link_1():
+  Current_time = time.strftime("%H:%M:%S")
+  if(Current_time != timer_1) :
+    while (Current_time != timer_1):
+      print ("Waiting for timer_1")
+      print ("Waiting, the current time is " + Current_time +" :-( " )
+      Current_time = time.strftime("%H:%M:%S") 
+      time.sleep(1)
+  if(Current_time == timer_1):
+    webbrowser.open(link_1)
+    open_link_2()
+
+def open_link_2():
+  Current_time = time.strftime("%H:%M:%S")
+  if(Current_time != timer_2):
+    while (Current_time != timer_2):
+      print ("Waiting for timer_2")
+      print ("Waiting, the current time is " + Current_time +" :-( " )
+      Current_time = time.strftime("%H:%M:%S") 
+      time.sleep(1)
+  if(Current_time == timer_2):
+    webbrowser.open(link_2)
+    open_link_1()
+
+def opener():
+  if(link_count == 0):
+    open_link_1()
+
+#Main
+
+opener()
