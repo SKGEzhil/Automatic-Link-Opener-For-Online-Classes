@@ -31,8 +31,8 @@ Current_time = time.strftime("%H:%M:%S")
 def open_link_1():
     # Start the timer
     Current_time = time.strftime("%H:%M:%S")
-    if (Current_time < timer_1):
-        while (Current_time != timer_1):
+    if Current_time < timer_1:
+        while Current_time != timer_1:
             print("Thu Waiting for timer_1")
             print("Waiting, the current time is " + Current_time + " :-( ")
             Current_time = time.strftime("%H:%M:%S")
@@ -49,7 +49,7 @@ def open_link_1():
         open_link_5()
 
     # Opening the link
-    if (Current_time == timer_1):
+    if Current_time == timer_1:
         webbrowser.open(link_1)
         open_link_2()
 
@@ -57,13 +57,13 @@ def open_link_1():
 # Function to Open link 2
 def open_link_2():
     Current_time = time.strftime("%H:%M:%S")
-    if (Current_time != timer_2):
-        while (Current_time != timer_2):
+    if Current_time != timer_2:
+        while Current_time != timer_2:
             print("Thu Waiting for timer_2")
             print("Waiting, the current time is " + Current_time + " :-( ")
             Current_time = time.strftime("%H:%M:%S")
             time.sleep(1)
-    if (Current_time == timer_2):
+    if Current_time == timer_2:
         webbrowser.open(link_2)
         open_link_3()
 
@@ -71,13 +71,13 @@ def open_link_2():
 # Function to Open link 3
 def open_link_3():
     Current_time = time.strftime("%H:%M:%S")
-    if (Current_time != timer_3):
-        while (Current_time != timer_3):
+    if Current_time != timer_3:
+        while Current_time != timer_3:
             print("Thu Waiting for timer_3")
             print("Waiting, the current time is " + Current_time + " :-( ")
             Current_time = time.strftime("%H:%M:%S")
             time.sleep(1)
-    if (Current_time == timer_3):
+    if Current_time == timer_3:
         webbrowser.open(link_3)
         open_link_4()
 
@@ -85,13 +85,13 @@ def open_link_3():
 # Function to Open link 4
 def open_link_4():
     Current_time = time.strftime("%H:%M:%S")
-    if (Current_time != timer_4):
-        while (Current_time != timer_4):
+    if Current_time != timer_4:
+        while Current_time != timer_4:
             print("Thu Waiting for timer_4")
             print("Waiting, the current time is " + Current_time + " :-( ")
             Current_time = time.strftime("%H:%M:%S")
             time.sleep(1)
-    if (Current_time == timer_4):
+    if Current_time == timer_4:
         webbrowser.open(link_4)
         open_link_5()
 
@@ -99,8 +99,8 @@ def open_link_4():
 # Function to Open link 5
 def open_link_5():
     Current_time = time.strftime("%H:%M:%S")
-    if (Current_time != timer_5):
-        while (Current_time != timer_5):
+    if Current_time != timer_5:
+        while Current_time != timer_5:
             print("Thu Waiting for timer_5")
             print("Waiting, the current time is " + Current_time + " :-( ")
             Current_time = time.strftime("%H:%M:%S")
@@ -108,14 +108,14 @@ def open_link_5():
     if Current_time != timer_5 and Current_time > timer_5:
         from linkbot_friday import open_link_1
         open_link_1()
-    if (Current_time == timer_5):
+    if Current_time == timer_5:
         webbrowser.open(link_5)
         from linkbot_friday import open_link_1
         open_link_1()
 
 
 def opener_3():
-    if (link_count == 0):
+    if link_count == 0:
         open_link_1()
 
 

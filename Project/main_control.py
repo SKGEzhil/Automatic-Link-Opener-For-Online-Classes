@@ -1,8 +1,6 @@
-import time 
-import datetime
 from datetime import datetime
 
-#Variables
+# Variables
 day = datetime.today().weekday()
 monday = 0
 tuesday = 1
@@ -12,25 +10,32 @@ friday = 4
 saturday = 5
 sunday = 6
 
-#Operator
-if(day == monday):
+# Operator
+if day == monday:
     from linkbot_monday import *
+
     open_link_1()
-if(day == tuesday):
+if day == tuesday:
     from linkbot_tuesday import *
+
     open_link_1()
-if(day == wednesday):
+if day == wednesday:
     from linkbot_wednesday import *
+
     open_link_1()
-if(day == thursday):
+if day == thursday:
     from linkbot_thursday import *
+
     open_link_1()
-if(day == friday):
+if day == friday:
     from linkbot_friday import *
+
     open_link_1()
-if(day == saturday):
+if day == saturday:
     from linkbot_saturday import *
+
     open_link_1()
-if(day == sunday):
+if day == sunday:
     from linkbot_testing import *
+
     open_link_1()
